@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+    background: rgb(245,137,184);
+    background: linear-gradient(180deg, rgba(245,137,184,1) 11%, rgba(148,187,233,1) 84%);
+    width: 100%; 
+    min-height: 60vh;
+    color: white;
+    top: 0;
+    margin: auto;
+    position: relative;
+}
+
+.header-text {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+.header-text h1 {
+    font-size: 44px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.header-text p {
+    font-size: 17px;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* header end */
+
+
+/* search bar */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: rgb(103, 155, 213);;
+    padding: 6px 16px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    width: 75%;
+    margin: 0 auto 70px;
+}
+
+.search-box .search-icon {
+    font-size: 1.18rem;
+    color: rgb(255, 255, 255);
+    padding-right: 10px;
+}
+
+.search-box .search-input {
+    transition: 0.5s;
+    margin-bottom: -8px;
+    flex: 1;
+}
+
+.search-input .input {
+    width: 99%;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 40px;
+    padding: 12px;
+    font-size: 13px;
+}
+
+/* search bar end */
+
+/* add book */
+.wrapper-book {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 60px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+
+}
+
+.wrapper-book .buku-baru {
+    border: 3px solid rgb(103, 155, 213);
+    width: 800px;
+    height: max-content;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.296);
+}
+.container {
+    border: 3px solid rgb(245,137,184);
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 390px;
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.296);
+}
+
+.buku-baru .header-newBook{
+    text-align: center;
+    font-size: 23px;
+}
+
+.buku-baru .judul-form {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 800;
+    font-size: 18px;
+    border: 2px solid rgb(103, 155, 213);
+}
+
+.form-buku .submit-buku {
+    background-color: rgb(103, 155, 213);
+    color: white;
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    font-size: 17px;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.item {
+    border-radius: 16px;
+    border: 2px solid rgb(245,137,184);
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.container-status {
+    display: flex;
+    gap: 30px;
+}
+
+/* button */
+.check-button, .hapus-button, .undo-button {
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.check-button, .undo-button {
+    background-color: green;
+    margin-left: 8px;
+}
+.hapus-button {
+    background-color: red;
+}
+
+/* footer */
+footer {
+    height: 80px;
+    background-color:  rgb(103, 155, 213);
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}   
+
+footer p {
+    padding: 34px;
+}
+
+
